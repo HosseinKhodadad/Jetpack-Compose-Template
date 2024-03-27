@@ -6,25 +6,27 @@ This is a concise template project written in Kotlin for Android app development
 
 
 
-#Kotlin Language
 
-#Jetpack Compose
+- Kotlin Language
 
-#Navigation Compose
+- Jetpack Compose
 
-#Lifecycle
+- Navigation Compose
 
-#Kotlin Coroutines
+- Lifecycle
 
-#Dagger Hilt
+- Kotlin Coroutines
 
-#Room Database
+- Dagger Hilt
 
-#Retrofit
+- Room Database
 
-#Glide & Coil
+- Retrofit
 
-#Multidex
+- Glide & Coil
+
+- Multidex
+
 
 
 
