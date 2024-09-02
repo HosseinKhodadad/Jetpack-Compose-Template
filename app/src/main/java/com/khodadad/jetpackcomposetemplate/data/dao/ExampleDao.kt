@@ -1,5 +1,6 @@
 package com.khodadad.jetpackcomposetemplate.data.dao
 
+
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -12,15 +13,15 @@ import com.khodadad.jetpackcomposetemplate.data.entity.ExampleEntity
 interface ExampleDao {
 
     @Query("SELECT * FROM example_table")
-    fun getAllData(): List<ExampleEntity>
+    suspend fun getAllData(): List<ExampleEntity>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(search: ExampleEntity?)
+    suspend fun insert(exampleEntity: List<ExampleEntity>)
 
     @Update
-    suspend fun update(search: ExampleEntity)
+    suspend fun update(exampleEntity: ExampleEntity)
 
     @Delete
-    suspend fun delete(search: ExampleEntity)
+    suspend fun delete(exampleEntity: ExampleEntity)
 
 }
